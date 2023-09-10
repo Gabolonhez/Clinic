@@ -1,4 +1,4 @@
-let heroName = "Hero Gabri";
+let heroName = "Hero Gabri"
 let xp = 7500;
 let heroLevel;
 

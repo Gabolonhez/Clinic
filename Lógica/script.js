@@ -301,3 +301,87 @@ do {
     counter1++
     while (counter < 3)
 }
+
+
+_______________________________________________________________
+
+// Function
+
+toast()
+
+function toast(){
+    console.log("Toasting bread")
+    injectBread()
+}
+
+function injectBread(){
+    console.log("preparing to inject bread")
+    console.log("finalized")
+}
+
+
+
+function mainSaveData(){
+    getData()
+    checkvalues()
+    sendToDatabase()
+}
+
+function getData(){
+    console.log("taking the user data")
+    if (1 < 3) {
+        console.log("Number found")
+    }
+}
+
+function checkvalues(){
+    console.log("validating data")
+}
+
+function sendToDatabase(){
+    console.log("signing up data")
+}
+
+
+function sendData(){
+    let bankName = "data-base"
+    console.log("Saving data at :" + bankName)
+
+    if (3 === 3)
+        console.log("Password validated")
+} 
+
+
+
+toast ("loaf bread", "Gabriel")
+
+function toast(bread, name = "Cliente", value=11.90){
+    console.log("toast made" + toast)
+    console.log("Is a order of " + name)
+    console.log("The total value is " + value)
+}
+
+
+createStringConnection("db_products", "Gabriel","9000")
+
+function createStringConnection(databaseName, user, pass){
+    console.log(`connect:DBCONNECT;user=${user};pass=${pass};initial_database=${databaseName}`)
+}
+
+
+let result = plus(5, 15)
+
+console.log("the result of this function is" + result)
+function plus(numA, numB){
+    let sum = numA + numB
+    return sum 
+}
+
+
+let userName = getFirstName("Gabriel very cute")
+console.log("Welcome" + userName)
+
+function getFirstName(name){
+    let firstName = name.split(" ")[0]
+    return firstName
+}
