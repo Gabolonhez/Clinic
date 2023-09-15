@@ -19,7 +19,7 @@ function calculation(wins, defeats) {
         rank = "Diamond"; 
 } else if (rankBalance>=91 && rankBalance <= 100) {
         rank = "Legend";
-} else if (rankBalance >= 101) {z
+} else if (rankBalance >= 101) {
         rank = "Immortal";
 }
 

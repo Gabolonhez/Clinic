@@ -385,3 +385,65 @@ function getFirstName(name){
     let firstName = name.split(" ")[0]
     return firstName
 }
+
+_______________________________________________________________
+
+// JSON - Javascript object Notation
+// key and value aiming to transfer data
+
+let invoice = {
+    name: "Gabriel", 
+    age: 28,
+    products: {
+        0: ["Wireless mouse", 299.99],
+        1: ["Membrana keyboard", 249.99],
+        2: ["Gamer monitor", 799.99]
+        3: ["Mousepad medium", 45.99]
+  },
+  taxes: 80.90
+}
+
+generateInvoice(invoice)
+
+function generateInvoice(invoice) {
+    console.log(`The buyer is ${invoice.name}`)
+    console.log(`The age is ${invoice.age}`)
+    console.log("---------")
+
+    for(let index in invoice.products){
+        let [productName, productPrice] = invoice.products[index]
+        console.log(`- ${productName}: R$ ${productPrice}`)
+    }
+
+}
+
+
+_________________________________________________________________
+// class and object
+
+class cakeForm{
+    constructor(cakeBatterFlavor, fillingFlavor){
+            this.cakeBatterFlavor = cakeBatterFlavor
+            this.fillingFlavor = fillingFlavor
+    }
+
+    write(){
+        console.log(`A delicius cake of ${this.cakeBatterFlavor} with filling of ${this.fillingFlavor}`)
+    }
+
+    toRoast(){
+        console.log("Cake of " + this.cakeBatterFlavor + " toasting ")
+    }
+
+}
+
+let partyCake = new cakeForm("chocolate dough", "nutella dough")
+let premiumCake = new cakeForm("vanilla", "coconut")
+
+partyCake.cakeBatterFlavor = "black forest" 
+
+partyCake.write()
+premiumCake.write()
+premiumCake.toRoast()
+
+
