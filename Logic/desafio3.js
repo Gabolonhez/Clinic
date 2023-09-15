@@ -7,11 +7,11 @@ class hero {
     }
 
     attack() {
-        let attack = this.getAttack();
+        let attack = this.toAttack();
         console.log(`The ${this.type} attacked using ${attack}`);
     }
 
-    getAttack() {
+    toAttack() {
         switch (this.type) {
             case "mage":
                 return "magic";
