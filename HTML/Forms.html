@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link alt="Icon Hamburger" rel="icon" type="icon" href="https://static.vecteezy.com/ti/vetor-gratis/p3/3073678-hamburguer-grande-realista-no-fundo-branco-vetor.jpg" width="100" >
+    <br>
+    <title>Gabriel's Delivery</title>
+    <style>
+        .row {
+            face="Arial"
+            margin: 5px;
+        }
+        label {
+            width: 100px;
+            text-align: right;
+            padding-right: 5px;
+            display: flexbox;
+        }
+        fieldset {
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: cadetblue;
+        }
+        table {
+            background-color: aliceblue;
+        }
+        table :hover td {
+            background-color:azure;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div> 
+    <h1 face="Arial" style="color: brown;">Gabriel's Delivery</h1>
+    <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/3073678-hamburguer-grande-realista-no-fundo-branco-vetor.jpg" width="80">
+    </div>
+    </center>
+    <fieldset>
+        <legend><h2><font color="" face="Arial">Register Yourself</font></h2></legend>
+        <div class="row">
+            <label>Name:</label><input type="text"/><br>
+        <br>
+        <label>Password:</label><input type="password"/><br>
+        <br>
+        <Label>Age:<sup><small><i>optional</i></small></sup></Label>
+        <select name="role">
+            <option value="number">10 - 20</option>
+            <option selected value="18">21 - 30</option>
+            <option value="number">31 - 40</option>
+            <option value="number">41 - 50</option>
+            <option value="number">51 - 60</option>
+            <option value="number">61 - 70</option>
+            <option value="number">71 - 80</option>
+            <option value="number">81 - 90</option>
+            <option value="number">91 - 100 </option>
+        </select>
+     </div>
+        <br>
+    </fieldset>
+    
+    <label name="signup" target="_blank" autocomplete="on" method="post" action="https://mysite.com.br/signup" onsubmit="alert('Your form has been sent');"></label>
+    <fieldset>
+        <legend><h2><font color="" face="Arial">My Burguer</font></h2></legend>
+    <div class="row">
+    <form method="post">
+        <br>
+        <p><strong>Which options do you want?</strong></p>
+        <input type="checkbox" name="optional[]" value="Cheese"> + 1 Hamburger <br>
+        <input type="checkbox" name="optional[]" value="Cheese"> + Cheese <br>
+        <input type="checkbox" name="optional[]" value="Bacon"> + Pepperoni <br>
+        <input type="checkbox" name="optional[]" value="Onion"> + Onion <br>
+        <input type="checkbox" name="optional[]" value="Salad"> + Salad <br>
+        <input type="checkbox" name="optional[]" value="Mayonnaise"> + Mayonnaise <br>
+    </div>  
+        <br>
+        <br>
+    <div class="row">
+        <p><strong>Meat point:</strong></p>
+        <input type="radio" name="optional[]" value="Medium meat"> Medium <br>
+        <input type="radio" name="optional[]" value="Undercooked meat"> Undercooked <br>
+        <input type="radio" name="optional[]" value="Well done"> Well done <br>
+    </div>
+        <br>
+        <br>
+    <div class="row">
+        <p><strong>French Fries:</strong></p>
+        <input type="radio" name="optional[]" value="No french fries"> No Fries <br>
+        <input type="radio" name="optional[]" value="Small fries"> Small Fries <br>
+        <input type="radio" name="optional[]" value="Medium Fries"> Medium Fries <br>
+        <input type="radio" name="optional[]" value="Large Fries"> Large Fries <br>
+    </div>
+        <br>
+        <br>
+    <div class="row">
+        <p><strong>Drink:</strong></p>
+        <input type="radio" name="optional[]" value="Water"> Water Bottle <br>
+        <input type="radio" name="optional[]" value="Orange Juice"> Orange Juice <br>
+        <input type="radio" name="optional[]" value="Grape Juice"> Grape Juice <br>
+        <input type="radio" name="optional[]" value="Zero soda"> Zero Soda <br>
+        <br>
+    </div>
+    
+    </form>
+    </fieldset>
+    <fieldset>
+        <legend><h2><font color=""" face="Arial">Delivery Adress</font></h2></legend>
+    <div class="row">
+        <br>
+        <Label>City:</Label>
+        <select name="role">
+            <option value="text">São Bernardo do Campo</option>
+            <option selected value="18">São Paulo</option>
+            <option value="text">Santo André</option>
+            <option value="text">São Caetano do Sul</option>
+            <option value="text">Diadema</option>
+        </select>
+        <br>
+        <br>
+        <label>Neighborhood:</label><br><textarea line rows="2 cols="20"></textarea>
+        <br><br>
+        <label>Street and number:</label><br><textarea line rows="2 cols="20"></textarea>
+        <br><br>
+        <input type="radio" name= "optional"> House
+        <br>
+        <input type="radio" name= "optional"> Apartament
+        <br>
+        <input type="radio" name="optional"> Another
+    </form>
+    </div>
+    </fieldset>
+        <button type="submit" onsubmit="alert('Your form has been sent');">Send request</button>
+        <button type="reset">Reset</button>
+        <br>
+        <center>
+    <div class="row">
+            <table summary="Hours of functioning" cellspacing="8px" cellpadding="10px" align="center" weidth="250px" border="1px">
+            <legend><h2><strog>Opening hour</strog></h2></legend>
+                <thead></thead>
+                <tbody>
+                    <tr align="center">
+                        <td>Monday</td>
+                        <td>Tuesday</td>
+                        <td>Wednesday</td>
+                        <td>Thursday</td>
+                        <td>Friday</td>
+                        <td>Satudary</td>
+                        <td>Sunday</td>
+                    </tr>
+                    <tr align="center">
+                        <td>12h00-22h00</td>
+                        <td>12h00-22h00</td>
+                        <td>12h00-22h00</td>
+                        <td>12h00-22h00</td>
+                        <td>12h00-22h00</td>
+                        <td>12h00-00h00</td>
+                            <td>12h00-00h00</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+    </div>        
+            <br>
+            <br>
+            <br>
+    <div class="row">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d985.7721814642172!2d-118.19489211672153!3d33.793491218345686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd317a6414976d%3A0x2967477256cbdcae!2sGabriel&#39;s%20Burgers!5e0!3m2!1sen!2sbr!4v1710551783300!5m2!1sen!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+        <source src=""
+        </center>
+    </div>
+</body>
+</html>
