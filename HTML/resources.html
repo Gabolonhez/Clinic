@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources</title>
+    <style>
+        kbd {
+            color:rgb(28, 110, 83);
+        }
+        code {
+            color: rgb(27, 94, 94);
+         }
+        pre{
+            background-color: rgb(155, 154, 154);
+         }
+        p {
+            c
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <meter max="100" min="0" value="50" ></meter>
+            <progress id= "progress" max="100" min="0" value="50"></progress>
+        </div>
+        <div class="script">
+            <script>
+                var progress = document.getElementById('progress');
+                const interval = setInterval(() => {
+                    progress.value += 10;
+                    if (progress.value >= 100) {
+                        alert("Uploaded successfully")
+                        clearInterval(interval);
+                    }
+                },1000);
+
+            </script>
+        </div>
+    </header>
+    <main>
+        <div class="Options">
+        <input list="browsers" type="search" name="search">
+        <datalist id="browsers">
+            <option>Google</option>
+            <option>Firefox</option> 
+            <option>Edge</option>  
+            <option>Opera</option>
+        </datalist>
+        </div>
+        <div class="test">
+            <p>Shortcut, press <kbd>CTRL + C</kdb></p>
+            <p>Change your background color using the command <code>background-color</code> </p>
+            <pre>
+                <p>  //Write this code:</p>
+                <code>
+                    kbd {
+                        color: aquamarine;
+                    }
+                    code {
+                        background-color: rgb(145, 145, 240);
+                     }
+            
+                    </code>
+            </pre>
+        </div>
+        <div class="3">
+            <input type="text" id="search" name="search">
+            <br>
+            <p id="description">Description of the text</p>
+            <script>
+                var searchfield = document.getElementById('search');
+                var descriptionObject = document.getElementById('description');
+                var textToSearch = descriptionObject.innerText;
+
+                function doSearch(search) {
+                    const regex = new RegExp(`(${search})(?!(.(?!<mark))*<\/mark>)+`, 'ig');
+                    const occurrences = textToSearch.match(regex);
+                    descriptionObject.innerText = textToSearch.replace(regex, `<mark>${search}</mark>`)
+                }
+                searchfield.addEventListener('keyup', (e) => doSearch(e.targe.value));
+            </script>
+        </div>
+    </main>
+    <footer>
+        <div class="3">
+        <details>
+            <summary>To personalize your code, utilize the command</summary><code>style</code>
+        </details>
+        </div>
+    </footer>
+</body>
+</html>

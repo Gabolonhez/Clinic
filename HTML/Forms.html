@@ -3,40 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forms.css">
     <link alt="Icon Hamburger" rel="icon" type="icon" href="https://static.vecteezy.com/ti/vetor-gratis/p3/3073678-hamburguer-grande-realista-no-fundo-branco-vetor.jpg" width="100" >
     <br>
     <title>Gabriel's Delivery</title>
-    <style>
-        .row {
-            face="Arial"
-            margin: 5px;
-        }
-        label {
-            width: 100px;
-            text-align: right;
-            padding-right: 5px;
-            display: flexbox;
-        }
-        fieldset {
-            margin: 15px 0;
-            border-radius: 10px;
-            border-color: cadetblue;
-        }
-        table {
-            background-color: aliceblue;
-        }
-        table :hover td {
-            background-color:azure;
-            cursor: pointer;
-        }
-    </style>
 </head>
-<body>
+<body> 
+    <header>
     <center>
-    <div> 
+    <div class="Header"> 
     <h1 face="Arial" style="color: brown;">Gabriel's Delivery</h1>
-    <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/3073678-hamburguer-grande-realista-no-fundo-branco-vetor.jpg" width="80">
+    <figure>
+         <img src="https://static.vecteezy.com/ti/vetor-gratis/p3/3073678-hamburguer-grande-realista-no-fundo-branco-vetor.jpg" width="80">
+         <figcaption></figcaption>
+    </figure>
+    <picture>
+        <source srcset="" media="(min-width: 600px)">
+        <img>
+    </picture>
     </div>
+    <header>
+    <main>
     </center>
     <fieldset>
         <legend><h2><font color="" face="Arial">Register Yourself</font></h2></legend>
@@ -60,7 +47,6 @@
      </div>
         <br>
     </fieldset>
-    
     <label name="signup" target="_blank" autocomplete="on" method="post" action="https://mysite.com.br/signup" onsubmit="alert('Your form has been sent');"></label>
     <fieldset>
         <legend><h2><font color="" face="Arial">My Burguer</font></h2></legend>
@@ -131,13 +117,15 @@
     </form>
     </div>
     </fieldset>
-        <button type="submit" onsubmit="alert('Your form has been sent');">Send request</button>
-        <button type="reset">Reset</button>
+        <input type="submit" onsubmit="alert"(Your order has been sent')>
+        <input type="reset">
         <br>
         <center>
+    </main>
+    <footer>
     <div class="row">
             <table summary="Hours of functioning" cellspacing="8px" cellpadding="10px" align="center" weidth="250px" border="1px">
-            <legend><h2><strog>Opening hour</strog></h2></legend>
+            <legend><h2><strong>Opening hour</strong></h2></legend>
                 <thead></thead>
                 <tbody>
                     <tr align="center">
@@ -170,5 +158,6 @@
         <source src=""
         </center>
     </div>
+    </footer>
 </body>
 </html>
