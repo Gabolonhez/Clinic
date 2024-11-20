@@ -136,11 +136,11 @@ class People {
     constructor() {
         this.name = name;
         this.age = age;
-        this.birthDate = 2023 - age;
+        this.birthDate = 2024 - age;
     }
 
     describe() {
-        console.log('My name isGabriel ${this.name} and my age is ${this.age}');
+        console.log('My name is Gabriel ${this.name} and my age is ${this.age}');
     }
 }
 
@@ -165,15 +165,15 @@ function comparePeople(p1, p2) {
  comparePeople(Gabriella, Gabriell);
  
  // arrays
- const studants = ['Gabriel', 'Gabriela', 'Titi'];
+ const students = ['Gabriel', 'Gabriela', 'Titi'];
 
- studants.push('Gabriell');
+ students.push('Gabriell');
 
- studants[4] = 'Titi';
+ students[4] = 'Titi';
 
- console.log(studants[4]);
+ console.log(students[4]);
 
- console.log(studants.shift());
+ console.log(students.shift());
 
 
  const plus = grade[0] + grade[1] + grade[2] + grade[3];
@@ -213,4 +213,6 @@ let plus = 0;
 
 const average = plus / grades.lenght;
 console.log(average);
+
+
  
